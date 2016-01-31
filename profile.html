@@ -1,0 +1,188 @@
+
+<html>
+	<head>
+		<title>Hotel 4 Hotel</title>
+		<link rel="stylesheet" type="text/css" href="css/profile.css" />
+		<link href="css/style1.css" rel="stylesheet" type="text/css" media="all" />
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<script type= "text/javascript" src = "js/countries.js"></script>
+		<script src="js/jquery.1.9.1.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+		<script>
+			$(function(){
+				$('a.log-reg').click(function()
+				{
+					$.get('p.php?p=' + $(this).attr('discount'), function(data)
+					{
+						$('.result').html(data);
+					});
+				});
+			});
+			function openDialog()
+			{
+				Avgrund.show( "#default-popup" );
+			}
+			function closeDialog()
+			{
+				Avgrund.hide();
+			}
+		</script>
+		<script type="text/javascript" src="js/popup.js"></script>
+	</head>
+
+	<body>
+			<div id="menutop">
+				<h2>Site title</h2>
+				<div class="link">
+				<a href="">Acasa</a>
+				<a href="">Link</a>
+				<a href="">Link</a>
+				<a style="cursor: pointer;" onclick="javascript:openDialog();" discount="login" class="log-reg">Login/Register</a>
+				</div>
+			</div>
+			
+			<header>
+				<div id="top">
+				<div class="t">
+				<div class="t1">Hotel Colentina</div>
+				<div class="t2">Lorem ipsum dolor sit amet, consectetur adipiscingVivamus sit amet ligula non lectus cursus egestas. </div>
+				<div class="t3">Read more ></div>
+				</div>
+					</div>
+</header>
+				
+				<div id="center">
+					<div class="left">
+						<div class="prof"></div>
+						<li><a href="">home</a></li>
+						<li><a href="">gallery</a></li>
+						<li><a href="">about us</a></li>
+					</div>
+					
+					<div class="cent2">
+					<div class="cent">
+							<div class="ntitle">
+								<div class="nt">
+									<span class="title">Hotel Details</span>
+									
+								</div>
+							</div>
+
+							<div class="edit">
+
+			<form class="sign" action="#">
+		
+			
+				<div class="top_section">
+					<div class="section">
+						<div class="input-sign email">
+							<input type="text"  placeholder="User Name"  required/> <span></span>
+							
+						</div>
+						<div class="input password">
+							<input type="password"  placeholder="Password" required/><span></span>
+						</div>
+						<div class="clear"> </div>
+					</div>
+					<div class="section">
+				
+						
+						<div class="clear"> </div>
+					</div>
+				</div>
+		
+				<div class="bottom-section">
+			
+
+					<div class="section">
+						<div class="input-sign details">
+							<input type="text"  placeholder="First Name" required/>
+						</div>
+						<div class="input-sign details1">
+							<input type="text"  placeholder="Last Name" required/>
+						</div>
+						<div class="clear"> </div>
+					</div>
+	
+					<div class="section">
+						<div class="input-sign details">
+							<input type="email" placeholder="Your Email" required/> 
+						</div>
+								<div class="input-sign details1">
+							<input type="email" placeholder="Your Email" required/> 
+						</div>
+					
+						<div class="clear"> </div>
+					</div>
+
+					<div class="section">
+						<div class="input-sign details">
+							<input type="text"  placeholder="City" required/> 
+						</div>
+						<div class="input-sign details1">
+							<input type="text"  placeholder="Province" required/> 
+						</div>
+						<div class="clear"> </div>
+					</div>
+
+					<div class="section">
+						<div class="input-sign details">
+							<input type="text"  placeholder="Address1" required/> 
+						</div>
+						<div class="input-sign details1">
+							<input type="text"  placeholder="Address2" required/> 
+						</div>
+						<div class="clear"> </div>
+					</div>
+
+					<div class="section-country">
+						<select id="country" onchange="change_country(this.value)" class="frm-field required">
+		            <option value="null"> Country</option>         
+		            <option value="tr1">Tara1</option>
+		            <option value="tr2">Tara2</option>
+		           
+		         </select>
+					</div>
+					<div class="submit">
+						<input class="bluebutton submitbotton" type="submit" value="Sign up" />
+					</div>
+				</div>
+			
+			</form>
+			
+		</div>
+						
+						
+					</div>
+					<div class="cent">
+							<div class="ntitle">
+								<div class="nt">
+									<span class="title">gsgsdgsdfs</span>
+									<span class="auth">postat de BoCa</span>
+								</div>
+							</div>
+							<div class="ptd">
+								<span class="ptitle">gdfgfdgdf</span>
+							</div>
+
+						<div class="ntext">
+							Lorem ipsum dolor sit amet, consectetur adipiscingVivamus sit amet ligula non lectus cursus egestas. Lorem ipsum dolor sit amet, consectetur adipiscingVivamus sit amet ligula non lectus cursus egestas. Lorem ipsum dolor sit amet, consectetur adipiscingVivamus sit amet ligula non lectus cursus egestas. Lorem ipsum dolor sit amet, consectetur adipiscingVivamus sit amet ligula non lectus cursus egestas. 
+						</div>
+						<div class="rm"><a href="">read more</a></div>
+						
+						
+					</div>
+
+					<div class="poza"></div>
+					</div>
+					
+					<div class="right">
+						<div class="fb"></div>
+						<div class="temp"></div>
+					</div>
+					
+				</div>
+	</body>
+</html>
